@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design_Shop_Newsletter</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <article class="newsletter_form" id="newsletter_form">
+        <h2>Subscribe here for our newsletter!</h2>
+        <form action="#" onsubmit="return false">
+            <input class="email" type="email" name="email" id="user_email" placeholder="Write your Email here"
+                required="">
+            <input class="btn" type="submit" value="Subscribe" onclick="PopupOpen()">
+        </form>
+    </article>
+    <article id="popup_msg">
+        <h2>YOUR EMAIL HAS BEEN CONFIRMED</h2>
+        <h2>THANKS FOR SUBSCRIBING!</h2>
+        <a href="../../index.html" onclick="PopupClose()">GO BACK</a>
+    </article>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

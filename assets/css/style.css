@@ -1,0 +1,275 @@
+/*======================
+    GENERALS Farbe: #323A45/#848484
+=====================*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Karla';
+    src: url('../fonts/Karla-VariableFont_wght.ttf');
+}
+
+html {
+    font-size: 12px;
+    font-family: 'Karla';
+    color: #323A45;
+}
+
+body {
+    margin: 5vh 7vw 5vh 7vw;
+}
+
+p {
+    line-height: 1.8rem;
+}
+
+
+
+/*======================
+    HEAD
+=====================*/
+
+header {
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5vh;
+}
+
+header nav {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 6vw;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #323A45;
+}
+
+header nav a:hover {
+    color: #848484
+}
+
+header h1:hover {
+    color: #848484
+}
+
+/*======================
+    MAIN
+=====================*/
+
+
+.product_gallery {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3%;
+}
+
+.product_gallery h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.product_gallery p {
+    font-size: 1.1rem;
+    font-weight: 600;
+
+}
+
+.product_gallery h3 {
+    font-size: 1rem;
+    color: #848484;
+    font-weight: 600;
+}
+
+
+.product_gallery img {
+    width: 100%;
+    transition: 0.5s ease-out;
+}
+
+.product_gallery img:hover {
+    width: 100%;
+    opacity: 0.2;
+}
+
+.bg-color {
+    background-color: #F7F7F7;
+}
+
+.product_gallery div {
+    margin-bottom: 30px;
+}
+
+.productOne {
+    grid-row: 1/2;
+    grid-column: 1/4;
+}
+
+div article {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+/*======================
+    LAST SEC
+=====================*/
+
+.last_sec {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3%;
+    margin-top: 3vh;
+}
+
+.last_sec span {
+    font-weight: 700;
+}
+
+.last_sec ul {
+    list-style: none;
+}
+
+.last_sec ul li {
+    line-height: 2.2rem;
+}
+
+.last_sec h3 {
+    margin-bottom: 3vh;
+}
+
+.last_sec a {
+    text-decoration: none;
+    color: #323A45;
+    font-weight: 600;
+}
+
+.last_sec_right {
+    /* grid-column: 3/4; */
+    display: flex;
+    flex-direction: column;
+    padding-left: 5vw;
+}
+
+.last_sec_right nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.last_sec_middle {
+    display: flex;
+    justify-content: space-between;
+}
+
+#sub {
+    font-weight: 900;
+}
+
+/*======================
+    NEWSLETTERNSITE
+=====================*/
+
+.newsletter_form {
+    width: 50%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    text-align: center;
+    padding: 10vh 0;
+    margin: 30vh auto;
+}
+
+.newsletter_form h2 {
+    font-size: 3rem;
+    margin-bottom: 5vh;
+}
+
+.newsletter_form form {
+    display: block;
+}
+
+.newsletter_form form input {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    margin-bottom: 3vh;
+}
+
+.newsletter_form form input[type=submit] {
+    background-color: #848484;
+    color: white;
+    border: none;
+}
+
+#popup_msg {
+    width: 100%;
+    padding: 10vh 0;
+    text-align: center;
+    margin: 30vh auto;
+}
+
+#popup_msg h2 {
+    font-size: 3rem;
+    margin-bottom: 5vh;
+}
+
+#popup_msg a {
+    color: #323A45;
+}
+
+@media only screen and (max-width: 600px) {
+    /* 
+    .product_gallery {
+        display: flex;
+        flex-direction: column;
+    } */
+
+    .product_gallery {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .productOne {
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    /* .last_sec {
+        grid-template-columns: repeat(1, 1fr);
+        grid-column: 1/2;
+    }
+
+    .last_sec_middle {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-column: 1/2;
+    } */
+
+    .last_sec {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .last_sec_middle {
+        margin-top: 20px;
+        flex-direction: column;
+    }
+
+    .last_sec_right {
+        margin-top: 20px;
+        padding: 0;
+    }
+}
